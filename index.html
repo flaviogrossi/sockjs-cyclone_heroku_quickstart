@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <script src="http://cdn.sockjs.org/sockjs-0.3.min.js"></script>
+  <script>
+    $(function() {
+      var conn = null;
+
+      function log(msg) {
+        var message = $('#message');
+        message.html(msg);
+      }
+
+      function connect() {
+        disconnect();
+
+        conn = new SockJS('http://' + window.location.host + '/connection');
+        conn.onopen = function() {
+          // executed when connection is opened
+        };
+
+        conn.onmessage = function(e) {
+          log(e.data);
+        };
+
+        conn.onclose = function() {
+          conn = null;
+        };
+      }
+
+      function disconnect() {
+        if (conn != null) {
+          conn.close();
+          conn = null;
+        }
+      }
+
+      $('form').submit(function() {
+        var text = $('#text').val();
+        conn.send(text);
+        $('#text').val('').focus();
+        return false;
+      });
+
+      connect();
+    });
+</script>
+</head>
+<body>
+<h3>My first SockJS-Cyclone app</h3>
+
+<p id="message">Not connected.</p>
+
+<form id="submitform">
+  <input id="text" type="text" />
+  <input type="submit" />
+</form>
+</body>
+</html>

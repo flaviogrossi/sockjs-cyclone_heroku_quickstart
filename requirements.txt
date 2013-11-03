@@ -1,0 +1,8 @@
+Twisted==13.1.0
+argparse==1.2.1
+git+https://github.com/fiorix/cyclone.git@e056d05d90135e991cee0053ceaa2e8494ae9ca2
+pyOpenSSL==0.13.1
+simplejson==3.3.1
+sockjs-cyclone==1.0.0
+wsgiref==0.1.2
+zope.interface==4.0.5
