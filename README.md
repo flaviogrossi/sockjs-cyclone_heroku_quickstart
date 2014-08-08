@@ -1,6 +1,9 @@
 SockJS-Cyclone deployment on Heroku Quickstart
 ==============================================
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+
 Install `mkvirtualenvwrapper`, `git` and the `heroku toolbelt` using your distribution package manager.
 
 Clone this repository:
