@@ -1,0 +1,7 @@
+{ 
+  "name": "sockjs-cyclone quickstart",
+  "description": "Quickstart demo for sockjs-cyclone",
+  "repository": "https://github.com/flaviogrossi/sockjs-cyclone_heroku_quickstart",
+  "logo": "http://www.rabbitmq.com/wp-uploads/2011/09/sockjs-logo-128.png",
+  "keywords": ["sockjs-cyclone", "sockjs", "cyclone", "websocket", "python", "twisted"]
+}
