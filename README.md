@@ -9,7 +9,7 @@ Install `mkvirtualenvwrapper`, `git` and the `heroku toolbelt` using your distri
 
 Clone this repository:
 ```
-git clone https://github.com/flaviogrossi/sockjs-cyclone_heroku_quickstart.git`
+git clone https://github.com/flaviogrossi/sockjs-cyclone_heroku_quickstart.git
 ```
 
 Create your python virtualenv for local use:
